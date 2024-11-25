@@ -10,8 +10,8 @@ const App = () => {
       Alert.alert('Error', 'Please fill all fields');
       return;
     }
-    // API call function yaha likho
-    fetch('https://jsonplaceholder.typicode.com/posts/1') // Dummy API
+  
+    fetch('https://jsonplaceholder.typicode.com/posts/1') 
       .then(response => response.json())
       .then(data => {
         Alert.alert('Login Successful!', `Welcome, your data: ${JSON.stringify(data)}`);
